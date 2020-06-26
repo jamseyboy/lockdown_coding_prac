@@ -1,0 +1,14 @@
+#this algorithm takes too much time for huge number so I need to design better algorithm
+
+def repeatedString(s, n):
+    x=0
+    mycount=0
+    while x<n:
+        y=0
+        for y in range(len(s)):
+            x=x+1
+            if x>n:
+                continue
+            if s[y]=='a':
+                mycount=mycount+1
+    return mycount
